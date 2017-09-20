@@ -65,11 +65,23 @@ int main()
 
 	num++; // Adds one
 
-	num = num + 2; //Adds two
+	num = num + 2; // Adds two
 	// OR
 	num += 2;
 
 
+	num = num * 2; // Multiplies by 2
+	// OR
+	num *= 2;
+
+	num3 = (num1++);
+
+
+	____________________________________________________________
+
+	
+
+	
 
 	return 0;
 	
