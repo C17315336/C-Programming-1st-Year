@@ -39,13 +39,30 @@ int main()
     num2 = 0;
     
     printf("Enter a number\n");
-    scanf("%d", &num1);
-    scanf("%f", &num2);
-    printf("\nYou entered %d\n", num1);
-    printf("You entered %f\n", num2);
+    scanf("%d", &num1); // Int read
+    scanf("%f", &num2); // Float read
+    printf("\nYou entered %d\n", num1); // Int print
+    printf("You entered %f\n", num2); // Float print
+
+    scanf("%d %f", &num1, &num2); // Multiple reads
     
     return 0;
     
 } // end main()
 
+
+
+int main()
+{
+    
+    float number;
+    number = 0;
+    
+    printf("Enter a number\n");
+    scanf("%f", &number); 
+    printf("You entered %5.2f\n", number); // 5 is the width of the number output
+    
+    return 0;
+    
+} // end main()
 
