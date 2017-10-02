@@ -1,13 +1,13 @@
 /*
-	Program Description:
-	Looking at scanf
+    Program Description:
+    Looking at scanf
  
-	Author:
-	Michael Collins
-	Eoghan Byrne
+    Author:
+    Michael Collins
+    Eoghan Byrne
  
-	Date:
-	27th September 2017
+    Date:
+    27th September 2017
  */
 
 #include <stdio.h>
@@ -16,9 +16,9 @@ int main()
 {
     
     int num1;
-   	float num2;
+    float num2;
 
-   	num1 = num2 = 0;
+    num1 = num2 = 0;
     
     printf("Enter two numbers\n");
     scanf("%d", &num1);
@@ -59,4 +59,3 @@ int main()
     return 0;
     
 }
-
