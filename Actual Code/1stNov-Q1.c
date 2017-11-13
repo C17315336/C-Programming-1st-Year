@@ -1,6 +1,6 @@
 /*
  Program Description:
- Array lab Q2
+ Array lab Q3 Reverse order
  
  Author:
  Michael Collins
@@ -18,6 +18,9 @@ int main()
     int array1[SIZE];
     int array2[SIZE];
     int i;
+    int j;
+
+    j = SIZE-1;
 
     
     // Enter data into array1
@@ -30,7 +33,15 @@ int main()
     // Copy contents of array1 into array2
     for (i = 0; i < SIZE; ++i)
     {
-        array2[i] = array1[i];
+        array2[j] = array1[i];
+        j--;
+    }
+
+
+    // Enter data into array1
+    for (i = 0; i < SIZE; ++i)
+    {
+        printf("%d\n", array2[i]);
     }
 
     
