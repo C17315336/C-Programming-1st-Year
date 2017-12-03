@@ -17,10 +17,10 @@
  The user decide the size of the set when the
  program runs. Your program must find the highest
  and lowest number in the set and display both to
- standard output. Ignore any error-checking.             	22 Marks
+ standard output. Ignore any error-checking.                 22 Marks
  (b) Show how you would modify the program (a) to
  enable the user to enter a different size set of
- numbers                                                    10 Marks
+ numbers                                                     10 Marks
  */
 
 #include <stdio.h>
@@ -32,7 +32,7 @@ int main()
     int no_in_set;
     int highest, lowest;
     int new_set;
-    char usr:
+    char usr;
     int i;
     
     
@@ -90,30 +90,31 @@ int main()
         }
         printf("\nYour highest number was:\t%d\nYour lowest number was:\t\t%d\n", highest, lowest);
         
-
+        
         /* Part B Code would start here */
-
+        /*
+        
         // Asking user for new number
         printf("How many numbers do you want to add?\n");
         scanf("%d", &new_set);
-
+        
         // Reallocating the memory uing ralloc()
         ptr = realloc(ptr, new_set * sizeof(int));
-
+        
         // Accepting new input
         if (ptr == NULL)
         {
-        	/* Copy of the user input section of Section A */
+            // Copy of the user input section of Section A
         }
-
-
+    
+        */
+        
         free(ptr);
         
     } // end else
     
     return 0;
 }
-
 
 
 
