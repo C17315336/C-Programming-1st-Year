@@ -56,7 +56,7 @@ int main()
     else
     {
         // Enter data (numbers in set)
-        printf("\nPlease enter your numbers;");
+        printf("\nPlease enter your numbers;\n");
         for (i = 0; i < no_in_set; ++i)
         {
             scanf("%d", & *(ptr +i));
@@ -115,6 +115,7 @@ int main()
     
     return 0;
 }
+
 
 
 
