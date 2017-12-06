@@ -51,7 +51,7 @@ int main()
     for (i = 0; i < AMOUNT; ++i)
     {
         printf("Value %d >\t", i+1);
-        scanf("%f", &gallons[i]);
+        scanf("%f", &*(gallons +i));
     } // end for
     
     // Asking the user to input 5 values into the miles array
@@ -59,7 +59,7 @@ int main()
     for (i = 0; i < AMOUNT; ++i)
     {
         printf("Value %d >\t", i+1);
-        scanf("%f", &miles[i]);
+        scanf("%f", &*(miles +i));
     } // end for
     
     

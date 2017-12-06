@@ -54,3 +54,21 @@ int main()
     return 0;
 }
 
+________________________________________________________
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float numbers[3] = {1.1, 1.2, 1.3};
+    int i;
+
+    for (i = 0; i < 3; ++i)
+    {
+    	printf("%f\n", *(numbers +i));
+    } // end for
+    
+    return 0;
+}
+
