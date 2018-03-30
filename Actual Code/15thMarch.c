@@ -149,7 +149,7 @@ struct student_details
 };
 
 _________________________________________________________
-//2014-2015 Exam Paper - Long Questions Q5
+// 2014-2015 Exam Paper - Long Questions Q5
 // http://student.dit.ie/exampapers/KT/2015_College_of_Science/DT211/DT211%201%20CMPU1025.pdf
 
 #include <stdio.h>
@@ -189,7 +189,7 @@ void get(struct flight_details *p1, struct flight_details *p2)
     
     printf("Enter passenger details\n");
     printf("Enter Surname\n");
-    scanf("%d", &(p->last_name));
+    scanf("%s", &(p->last_name));
     printf("\nEnter First Name\n");
     scanf("%s", &(p->first_name));
 }

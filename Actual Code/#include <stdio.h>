@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define STACK_SIZE 50
+#define INPUTSIZE 20
+#define EMPTY (-1)
+
+void push(char ch);     // Insert character ch on the top of the stack
+char pop();             // Remove and return the top character on the stack
+
+char elements[STACK_SIZE];  // The stack
+int top = EMPTY;
+
+void push(char ch)
+{
+    elements[++top] = ch;
+}
+
+char pop()
+{
+    char find = elements[top];
+    int idxToDel = top--;
+    memmove(&elements[idxToDel], &elements[idxToDel + 1], strlen(elements) - idxToDel);
+    return find;
+}
+
+int main()
+{
+    char input[INPUTSIZE];
+    char theCharacter;
+    int i;
+    int len = 0;
+
+    printf("Welcome to the stack program.\nPlease enter your sequence:");
+    scanf("%s", input);
+
+    len = strlen(input);
+
+    for (i = 0; i < len; i++)
+    {
+        if (input[i] == '*')
+        {
+            printf("\n Popped: %c\n", pop());
+        }
+        else
+        {
+            printf("\n Pushed: %c\n", input[i]);
+            theCharacter = input[i];
+            push( theCharacter);
+        }
+
+    }
+
+
+    if (top != EMPTY)
+    {
+        printf("\n\nThe stack contents is:\n");
+        for (i = len; i >= 0; i--)
+        {
+            printf("\t%c\n", elements[i]);
+        }
+        printf("\n\n");
+        return 1;
+    }
+    else
+    {
+        printf("\n\n*** Sorry, stack is empty.\n\n");
+    }
+    return 0;
+}
+
+
