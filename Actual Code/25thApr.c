@@ -1,5 +1,7 @@
 /*
 	Pass by reference
+	Pass by value is passing a copy of the variable
+	Pass by refer is passing the address of the variable
 */
 
 #include <stdio.h>
